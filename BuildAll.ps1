@@ -59,7 +59,7 @@ if ($Clean)
     Exit
 }
 
-$configurationForMrtAndAnyCPU = "Release"
+$configurationForMrtAndAnyCPU = $Configuration
 $MRTSourcesDirectory = "dev\MRTCore"
 
 $VCToolsInstallDir = . "${env:ProgramFiles(x86)}\Microsoft Visual Studio\Installer\vswhere.exe" -Latest -prerelease -requires Microsoft.Component.MSBuild -property InstallationPath
