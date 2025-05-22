@@ -145,6 +145,10 @@ function Get-TemplateLanguage
     {
         'C#'
     }
+    elseif ($language -eq 'fs')
+    {
+        'F#'
+    }
     else
     {
         $language

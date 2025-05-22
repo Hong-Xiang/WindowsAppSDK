@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VSTemplate Version="3.0.0" Type="Item" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
+  <TemplateData>
+    <DefaultName>CustomControl.fs</DefaultName>
+    <Name ID="1001" Package="FIXME-PACKAGEGUID">Windows App SDK F# Templated Control</Name>
+    <Description ID="1003" Package="FIXME-PACKAGEGUID">A templated control for F# WinUI applications</Description>
+    <Icon>WinUI.Neutral.FSharp.TemplatedControl.ico</Icon>
+    <ProjectType>FSharp</ProjectType>
+    <TemplateID>WinUI.Neutral.FSharp.TemplatedControl</TemplateID>
+    <TemplateGroupID>WinRT-Managed-UAP</TemplateGroupID>
+    <AppliesTo>FSharp + WindowsAppSDK</AppliesTo>
+    <NumberOfParentCategoriesToRollUp>2</NumberOfParentCategoriesToRollUp>
+    <ShowByDefault>false</ShowByDefault>
+    <TargetPlatformName>Windows</TargetPlatformName>
+    <LanguageTag>F#</LanguageTag>
+    <LanguageTag>XAML</LanguageTag>
+    <PlatformTag>windows</PlatformTag>
+    <ProjectTypeTag>WinUI</ProjectTypeTag>
+  </TemplateData>
+  <TemplateContent>
+    <ProjectItem ReplaceParameters="true" TargetFileName="$fileinputname$.fs" SubType="Code">TemplatedControl.fs</ProjectItem>
+    <ProjectItem ReplaceParameters="true" TargetFileName="Themes\Generic.xaml">Themes\Generic.xaml</ProjectItem>
+  </TemplateContent>
+</VSTemplate>

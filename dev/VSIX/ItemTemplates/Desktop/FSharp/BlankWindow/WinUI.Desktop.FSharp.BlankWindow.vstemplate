@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VSTemplate Version="3.0.0" Type="Item" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
+  <TemplateData>
+    <DefaultName>BlankWindow.xaml</DefaultName>
+    <Name ID="1001" Package="FIXME-PACKAGEGUID">Windows App SDK F# Blank Window</Name>
+    <Description ID="1003" Package="FIXME-PACKAGEGUID">A blank window for F# WinUI applications</Description>
+    <Icon>WinUI.Desktop.FSharp.BlankWindow.ico</Icon>
+    <ProjectType>FSharp</ProjectType>
+    <TemplateID>WinUI.Desktop.FSharp.BlankWindow</TemplateID>
+    <TemplateGroupID>WinRT-Managed-UAP</TemplateGroupID>
+    <AppliesTo>FSharp + WindowsAppSDK</AppliesTo>
+    <NumberOfParentCategoriesToRollUp>2</NumberOfParentCategoriesToRollUp>
+    <ShowByDefault>false</ShowByDefault>
+    <TargetPlatformName>Windows</TargetPlatformName>
+    <LanguageTag>F#</LanguageTag>
+    <PlatformTag>windows</PlatformTag>
+    <ProjectTypeTag>desktop</ProjectTypeTag>
+    <ProjectTypeTag>WinUI</ProjectTypeTag>
+  </TemplateData>
+  <TemplateContent>
+    <ProjectItem OpenInEditor="true" ReplaceParameters="true" ItemType="Page" CustomTool="MSBuild:Compile" TargetFileName="$fileinputname$.xaml">BlankWindow.xaml</ProjectItem>
+    <ProjectItem ReplaceParameters="true" TargetFileName="$fileinputname$.xaml.fs">BlankWindow.xaml.fs</ProjectItem>
+  </TemplateContent>
+</VSTemplate>
